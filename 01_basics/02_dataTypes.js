@@ -13,3 +13,8 @@ let state;
 
 //primitives : number, bigInt, string, boolean, null, undefined, symbol
 //object
+
+console.log(typeof "Sonu");
+console.log(typeof age);
+console.log(typeof null);
+console.log(typeof undefined);

@@ -37,3 +37,8 @@ let myObj = {
 const myFunction = function(){
     console.log("Hello World...")
 } //typeof function object 
+
+
+
+//*****************************************************
+//Memory 2types: 1.Stack 2.Heap

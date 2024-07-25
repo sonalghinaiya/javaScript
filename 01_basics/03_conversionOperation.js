@@ -26,7 +26,7 @@ let StringNumber = String(num)
 //console.log(StringNumber)
 //console.log(typeof StringNumber)
 
-//****************** Operation *********************
+//****************** Operation **********************
 
 let value = 3
 let negValue = -value

@@ -7,6 +7,7 @@ console.log(3 + 3)
 console.log("Sonal Ghinaiya")
 
 let name = "Sonu"
+
 let age = 20
 let isLogin = true
 let state;

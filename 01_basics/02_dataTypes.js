@@ -10,7 +10,6 @@ let name = "Sonu"
 let age = 20
 let isLogin = true
 let state;
-
 //primitives : number, bigInt, string, boolean, null, undefined, symbol
 //object
 

@@ -37,4 +37,3 @@ console.log(url.includes('sonl'))
 console.log(gameName.split(''));
 console.log(gameName.split('-'));
 
-

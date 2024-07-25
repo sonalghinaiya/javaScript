@@ -33,3 +33,8 @@ console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sonal'))
 console.log(url.includes('sonl'))
+
+console.log(gameName.split(''));
+console.log(gameName.split('-'));
+
+

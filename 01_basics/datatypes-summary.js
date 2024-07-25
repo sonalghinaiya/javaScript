@@ -15,7 +15,7 @@ let userEmail;
 //symbol - unique define return value different
 const id = Symbol('123')
 const anotherid = Symbol('123')
-//console.log(id === anotherid);
+//console.log(id === anotherid)
 
 const bigNumber = 42333947584759340n
 

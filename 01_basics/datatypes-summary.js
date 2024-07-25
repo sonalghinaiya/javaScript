@@ -15,7 +15,7 @@ let userEmail;
 //symbol - unique define return value different
 const id = Symbol('123')
 const anotherid = Symbol('123')
-console.log(id === anotherid);
+//console.log(id === anotherid);
 
 const bigNumber = 42333947584759340n
 
@@ -42,3 +42,23 @@ const myFunction = function(){
 
 //*****************************************************
 //Memory 2types: 1.Stack 2.Heap
+
+let myName = "Sonal Ghinaiya"
+
+let anotherName = myName
+anotherName = "SONU GHINAIYA"
+
+console.log(myName);
+console.log(anotherName);
+
+//object 
+let user = {
+    email : "user@google.com",
+    upi : "user@ypl"
+}
+
+let user2 = user
+
+user2.email = "user2@gmail.com"
+console.log(user.email)
+console.log(user2.email)

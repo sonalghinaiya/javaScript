@@ -17,3 +17,9 @@ if(true){
 console.log("Outer:",a);
 // console.log(b);
 //console.log(c); //30
+
+
+// ******************* Nested Scope ************************************
+function one(){
+    
+}

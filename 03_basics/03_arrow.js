@@ -36,4 +36,22 @@ const chai = () => {
 // chai()
 
 //syntax of arrow function:
-//
+//() => {} 
+
+// const addTwo = (num1, num2) =>{
+//     return num1 + num2
+// }
+//console.log(addTwo(5, 7))
+
+//implicit return
+//const add = (num1, num2) => num1 + num2
+
+// const add = (num1, num2) => (num1 + num2)
+
+//object return
+const add = (num1, num2) => ({username: "Sonal"})
+console.log(add(5, 7))
+
+// const myArray = [2, 3, 5, 7, 9]
+// myArray.forEach(() => {})
+

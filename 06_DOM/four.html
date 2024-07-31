@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color: white;">
+    <h1>Edit And Remove Element in DOM</h1>
+    <ul class="language">
+        <li>javaScript</li>
+        <li>typeScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("Java")
+    addLanguage("Python")
+    addLanguage("Android")
+
+    //optimize method bcz after li add so traversal that tree in upper method
+    function addOptimizeLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizeLanguage("React JS")
+
+    //Edit
+    const secondLang = document.querySelector('li:nth-child(2)')
+    //secondLang.innerHTML = "Flutter"
+
+    const newLi = document.createElement('li')
+    newLi.textContent = "Flutter"
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector('li:nth-child(1)')
+    firstLang.outerHTML = '<li>TypeScript<li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>

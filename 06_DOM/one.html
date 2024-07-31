@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Learning</title>
     <style>
-        .bg-black{
+        .bg-black {
             background-color: black;
             color: white;
         }
     </style>
 </head>
+
 <body class="bg-black">
     <div>
         <h1 id="title" class="heading">DOM Learning By Sonu <span style="display: none;">Test Text</span></h1>
@@ -18,21 +20,26 @@
         <h2>Lorem ipsum dolor sit2.</h2>
         <h2>Lorem ipsum dolor sit3.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
-       <input type="password" name="" id="">
+        <input type="password" name="" id="">
+        <ul>
+            <li class="list-item">One</li>
+            <li class="list-item">Two</li>
+            <li class="list-item">Three</li>
+        </ul>
     </div>
 
-    <script> 
-    <!-- //browser -inspect video -31   
-        console.log(window);
-        console.log(window.document);
-        console.log(window);
-        console.dir(document);
-        console.log(document.baseURI);
-        console.log(document.links);
-        document.getElementById('title');
-        document.getElementById('tile').innerHTML = "<h1> Sonu </h1>";--->
+    <script>
+         //browser -inspect console video -31   
+            console.log(window);
+            console.log(window.document);
+            console.log(window);
+            console.dir(document);
+            console.log(document.baseURI);
+            console.log(document.links);
+            document.getElementById('title');
+            document.getElementById('tile').innerHTML = "<h1> Sonu </h1>";--->
 
-        //video -32
+        //browser -inspect console video -32
         document.getElementById('title')
         document.getElementById('title').id
         document.getElementById('title').class //wrong
@@ -62,6 +69,55 @@
         document.querySelector('#title')
         document.querySelector('.heading')
 
-    </script> 
+        document.querySelector('ul')
+        const myul = document.querySelector('ul')
+        myul.querySelector('li')
+        const myli = myul.querySelector('li')
+        myli.style.backgroundColor = "green"
+        myli.style.padding = "10px"
+        myli.innerText
+        myli.innerText = "five"
+
+        const temp = document.querySelectorAll('li')
+        temp
+
+        temp.style.color = 'green'//error not select like this
+        temp[0].style.color = 'green' //one
+
+        temp.forEach(function (l) {
+            l.style.backgroundColor = "green"
+        })
+
+        document.getElementsByClassName('list-item')
+        const tempclass = document.getElementsByClassName('list-item')
+        tempclass
+
+        Array.form(tempclass)
+        const myArray = Array.form(tempclass)
+        myArray
+
+        myArray.forEach(function (li) {
+            li.style.color = 'orange'
+        })
+
+        //browser wikipedia javascript inspect
+        document.querySelectorAll('h3')
+        const temp = document.querySelectorAll('h3')
+        temp[0].innerText
+
+        temp.forEach(function (l) {
+            l.style.color = "red"
+        })
+
+        temp.forEach(function (l) {
+            l.style.color = "white"
+            l.style.backgroundColor = "black"
+            l.style.padding = "10px"
+            l.innerText = "SONU GHINAIYA"
+        })
+
+
+    </script>
 </body>
+
 </html>
